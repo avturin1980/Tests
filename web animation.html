@@ -1,0 +1,69 @@
+<svg width="1440" height="900" >
+
+<!-- <rect id="r1" x="0" y="0" width="1366" height="900" fill="black"/> -->
+
+<defs>
+<radialGradient id="grad1" cx="10%" cy="80%" r="50%" fx="0%" fy="100%">
+<stop offset="0%" style= "stop-color:rgb(202,0,255);stop-opacity:1"/>
+<stop offset="100%" style="stop-color:rgb(253,197,161);stop-opacity:1" />
+<animate
+attributeName="cx"
+begin="0s"
+dur="3s"
+values="10%; 44%; 10%"
+fill="Remove"
+repeatCount="indefinite"
+/>
+</radialGradient>
+<radialGradient id="grad2" cx="120%" cy="10%" r="70%" fx="100%" fy="0%">
+<stop offset="0%" style="stop-color: #000000;stop-opacity:1" />
+<stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+<animate
+attributeName="cy"
+begin="0s"
+dur="2.5s"
+values="10%; 57%; 10%"
+fill="Remove"
+repeatCount="indefinite"
+/>
+</radialGradient>
+<radialGradient id="grad3" cx="50%" cy="20%" r="40%" fx="50%" fy="00%">
+<stop offset="0%" style="stop-color:#004fff;stop-opacity:1" />
+<stop offset="100%" style="stop-color: red;stop-opacity:1" />
+<animate
+attributeName="cx"
+begin="0s"
+dur="2s"
+values="50%; 24%; 50%"
+fill="Remove"
+repeatCount="indefinite"
+/>
+</radialGradient>
+</defs>
+
+  <text id="t1" font-family="Vtks Revolt" x="10" y="300" fill="none" stroke="url(#grad2)" stroke-width="2"  stroke-dasharray="0 1114" font-size="180">
+    <tspan x="450" dy="0em"> W E B </tspan>
+    <tspan x="100" dy="2em"> A N I M A T I O N </tspan>
+      
+   </text>
+
+  <text id="t3" font-family="Vtks Revolt" x="10" y="300" fill="none" stroke="url(#grad3)" stroke-width="1"  stroke-dasharray="0 1114" font-size="180">
+    <tspan x="450" dy="0em"> W E B </tspan>
+    <tspan x="100" dy="2em"> A N I M A T I O N </tspan>
+   </text>
+
+  <animate  xlink:href="#t3" attributeName="stroke-dasharray" begin="0.5s" dur="10s" values="0 1114; 24 24; 150 135; 24 24; 1114 0"
+             fill="freeze"/>
+
+  <animate  xlink:href="#t1" attributeName="stroke-dasharray" begin="0.5s" dur="10s" values="0 1114; 75 500; 150 135; 24 24; 1114 0"
+             fill="freeze"/>
+  
+  <animate  xlink:href="#t1" attributeName="stroke-width" begin="0.5s" dur="10s" values="1; 2; 2"
+             fill="freeze"/>
+  <animate  xlink:href="#t3" attributeName="stroke-width" begin="0.5s" dur="10s" values="1; 1; 2; 1; 1"
+             fill="freeze"/>
+
+
+</svg>
+
+
